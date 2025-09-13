@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: rgb(0, 255, 42);
+}
+
+header {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy; /* new */
+    text-decoration-color: red; /* new */
+    font-style: italic;
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+hr {
+    height: 2px;
+    background-color: greenyellow;
+    color: green;
+    margin-bottom: 20px;
+}
+
+br {
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: red;
+}
+
+nav {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+nav a {
+    color: rgb(0, 255, 42);
+    text-decoration: none;
+    font-weight: 600;
+    background-color: darkgreen;
+    box-shadow: 4px 4px green;
+    padding: 10px 15px;
+    margin: 10px 15px;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav a:active {
+    color: violet;
+    background-color: blue;
+    box-shadow: 2px 2px green;
+}
+
+nav .currentPage {
+    color: blue;
+    background-color: darkred;
+    box-shadow: 4px 4px red;
+}
+
+.textBlocks {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+
+.textBlocks .items {
+    border: double 5px red;
+    max-width: 25%; /* new */
+    text-align: center;
+    font-size: 1em;
+}
+
+.textBlocks .items img {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 15px;
+}
+
+.infoPage {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 50px;
+    margin-bottom: 0px;
+    padding: 15px;
+}
+
+.infoPage .items {
+    border: double 5px red;
+    max-width: fit-content; /* new */
+    height: max-content;
+    text-align: center;
+    font-size: large;
+    margin: 25px;
+}
+
+.infoPage .items p {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.infoPage .items img {
+    width: 800px;
+}
+
+#wc {
+    margin-bottom: 20px;
+}
+
+#creeper {
+    width: 450px;
+}
+
+#creeperText {
+    font-size: 1.4em;
+}
+
+#mainSource {
+    padding: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sources {
+    padding: 5px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    padding: 5px;
+}
+
+footer p #fakeVirus {
+    color: red;
+    text-decoration: underline;
+}
+
+footer p #fakeVirus:hover {
+    color: rgb(91, 80, 255);
+}
+
+footer p #fakeVirus:active {
+    color: yellow;
+}

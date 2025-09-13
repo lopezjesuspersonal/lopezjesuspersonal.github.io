@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Viruses</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>WannaCry</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <div>
+            <a href="index.html">Main</a>
+            <a href="iloveyou.html">ILOVEYOU</a>
+            <a class="currentPage" href="#">WannaCry</a>
+            <a href="creeper.html">Creeper</a>
+        </div>
+    </nav>
+
+    <div class="infoPage" id="wc">
+        <div class="items">
+            <img src="images/wannacry2.png" alt="ILOVEYOU Virus">
+        </div>
+        <div class="items">
+            <p>
+                WannaCry was a powerful hybrid between ransomware and worm. Not only did it spread to 
+                any open networks it was able to connect to, but it encrypted data on any machine it latched 
+                onto and locked it behind a crypto paywall. This exploit was developed by the NSA, however it was 
+                stolen and then used by a group named the Shadow Brokers.
+            </p>
+            <p>
+                The Shadow Brokers are attackers that use many types of zero-days and malware tools, many of 
+                which have been developed by the NSA. It is suspected that the leak was due to an insider attack.
+            </p>
+            <p>
+                Funnily enough, this exploit was one of the simplest to patch due to an oversight in the code. 
+                A security researcher named Marcus Hutchins was able to reverse engineer the source code and found 
+                that the virus would automatically disable itself if it believed itself to be in a virtual machine.
+            </p>
+        </div>
+    </div>
+
+    <div class="sources" id="wcSource">
+        <p>For more information, <a href="https://www.cloudflare.com/learning/security/ransomware/wannacry-ransomware/" target="_blank">Click Me</a></p>
+    </div>
+
+    <footer>
+        <br>
+        <hr>
+        <p>Click <span id="fakeVirus">me</span> to install a virus!</p>
+        <p>&copy;2025 Jesus Lopez-Martinez</p>
+    </footer>
+
+    <script>
+        document.querySelector("#fakeVirus").addEventListener("click", clickedVirus);
+        function clickedVirus() {
+            alert("really?");
+        }
+    </script>
+</body>
+</html>

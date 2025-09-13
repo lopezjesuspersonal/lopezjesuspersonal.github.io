@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Viruses</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ILOVEYOU</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <div>
+            <a href="index.html">Main</a>
+            <a class="currentPage" href="#">ILOVEYOU</a>
+            <a href="wannacry.html">WannaCry</a>
+            <a href="creeper.html">Creeper</a>
+        </div>
+    </nav>
+
+    <div class="infoPage">
+        <div class="items">
+            <img src="images/iloveyou2.jpg" alt="ILOVEYOU Virus">
+        </div>
+        <div class="items">
+            <p>
+                The ILOVEYOU virus happened on May 4, 2000, and it originated in the Philippines. This is one of the 
+                most widespread and harmful viruses in history, so much so that it led to global awareness of the 
+                importance of strong cybersecurity practices. It was estimated to have caused between 
+                $3 - $15 billion in damages. 
+            </p>
+            <p>
+                In just the matter of a few hours, the ILOVEYOU virus was able to spread from Asia, to Europe, and the Americas. 
+                Many important organizations and companies were affected, such as the CIA, FBI, the Federal Reserve and AT&T. 
+                Due to the massive influx of emails, many mail servers also crashed.
+            </p>
+            <p>
+                This virus was able to run whenever the computer restarted to ensure it could carry out its other objectives. 
+                These were to replicate and send itself to anyone on the user's address book, and to install a trojan that would attempt 
+                to steal any passwords from the computer.
+            </p>
+        </div>
+    </div>
+
+    <div class="sources">
+        <p>For more information, <a href="https://www.ebsco.com/research-starters/computer-science/iloveyou-virus-attacks-computers" target="_blank">Click Me</a></p>
+    </div>
+
+    <footer>
+        <br>
+        <hr>
+        <p>Click <span id="fakeVirus">me</span> to install a virus!</p>
+        <p>&copy;2025 Jesus Lopez-Martinez</p>
+    </footer>
+
+    <script>
+        document.querySelector("#fakeVirus").addEventListener("click", clickedVirus);
+        function clickedVirus() {
+            alert("really?");
+        }
+    </script>
+</body>
+</html>

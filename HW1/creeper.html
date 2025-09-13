@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Viruses</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Creeper</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <div>
+            <a href="index.html">Main</a>
+            <a href="iloveyou.html">ILOVEYOU</a>
+            <a href="wannacry.html">WannaCry</a>
+            <a class="currentPage" href="#">Creeper</a>
+        </div>
+    </nav>
+
+    <div class="infoPage">
+        <div class="items">
+            <img id="creeper" src="images/creeper2.jpg" alt="ILOVEYOU Virus">
+        </div>
+        <div class="items" id="creeperText">
+            <p>
+                The Creeper program was the first virus ever created, developed by Bob Thomas 
+                in 1971. Although not really malicious, it was able to self-replicate and spread 
+                itself across a network.
+            </p>
+            <p>
+                It's only real purpose was to prove it was possible to make a program that could 
+                move across a network to infect other machines. It didn't do much besides display 
+                the message: "I'M THE CREEPER. CATCH ME IF YOU CAN!"
+            </p>
+            <p>
+                To defend against the Creeper virus, the first antivirus was developed. The creator 
+                of the Reaper antivirus is believed to be Ray Tomlinson, the creator of e-mail. The 
+                Reaper's only purpose was to detect the Creeper, and immediately remove it from the 
+                system to stop it from spreading to another computer.
+            </p>
+        </div>
+    </div>
+
+    <div class="sources">
+        <p>For more information, <a href="https://pandorafms.com/blog/creeper-and-reaper/" target="_blank">Click Me</a></p>
+    </div>
+
+    <footer>
+        <br>
+        <hr>
+        <p>Click <span id="fakeVirus">me</span> to install a virus!</p>
+        <p>&copy;2025 Jesus Lopez-Martinez</p>
+    </footer>
+
+    <script>
+        document.querySelector("#fakeVirus").addEventListener("click", clickedVirus);
+        function clickedVirus() {
+            alert("really?");
+        }
+    </script>
+</body>
+</html>

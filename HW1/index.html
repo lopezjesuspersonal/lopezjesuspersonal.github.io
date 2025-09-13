@@ -3,17 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CS Viruses</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        fff
+        <h1>Computer Viruses</h1>
     </header>
+
+    <hr>
+
     <nav>
-        fff
+        <div>
+            <a class="currentPage" href="#">Main</a>
+            <a href="iloveyou.html">ILOVEYOU</a>
+            <a href="wannacry.html">WannaCry</a>
+            <a href="creeper.html">Creeper</a>
+        </div>
     </nav>
+
+    <div class="textBlocks">
+        <div class="items">
+            <img src="images/loveletter.png" alt="ILOVEYOU Virus">
+            <p>
+                Computer viruses are a type of software program designed to cause unwanted behavior in a computer. Usually, 
+                this behavior is malicious and is intended to cause damage and spread itself.
+            </p>
+        </div>
+        <div class="items">
+            <img src="images/wannacry.png" alt="WannaCry Virus">
+            <p>
+                The effects a virus may have vary greatly; some are relatively harmless while others can cause severe 
+                financial and data loss. Methods of infection also depend on what is being targeted; some exploit 
+                vulnerabilities of software while others rely on social engineering.
+            </p>
+        </div>
+        <div class="items">
+            <img src="images/creeper.jpg" alt="Creeper Virus">
+            <p>
+                To protect yourself from viruses, having a good antivirus is crucial, but not the only aspect of a 
+                great defense. Safe internet browsing habits are just as, if not more important, to staying safe, and 
+                are generally the main way of avoiding infection.
+            </p>
+        </div>
+    </div>
+
+    <div class="sources" id="mainSource">
+        <p>For more information, <a href="https://www.fortinet.com/resources/cyberglossary/computer-virus" target="_blank">Click Me</a></p>
+        <details> <!-- new -->
+            <summary>Virus Quick Links</summary> <!-- new -->
+            <ul>
+                <li><a href="https://www.ebsco.com/research-starters/computer-science/iloveyou-virus-attacks-computers" target="_blank">ILOVEYOU</a></li>
+                <li><a href="https://www.cloudflare.com/learning/security/ransomware/wannacry-ransomware/" target="_blank">WannaCry</a></li>
+                <li><a href="https://pandorafms.com/blog/creeper-and-reaper/" target="_blank">Creeper</a></li>
+            </ul>
+        </details>
+    </div>
+
     <footer>
-        fff
+        <br>
+        <hr>
+        <p>Click <span id="fakeVirus">me</span> to install a virus!</p>
+        <p>&copy;2025 Jesus Lopez-Martinez</p>
     </footer>
+
+    <script> /* new */ 
+        document.querySelector("#fakeVirus").addEventListener("click", clickedVirus);
+        function clickedVirus() {
+            alert("really?");
+        }
+    </script>
 </body>
 </html>
