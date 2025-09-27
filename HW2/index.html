@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="dealer">
+            <img id="handsImage" src="img/handsNeutral.png" alt="Neutral">
+        </div>
+        <div id="cardsContainer">
+            <div id="cards">
+                <img src="img/deck.png" alt="deck of cards">
+            </div>
+            <div>
+                <br><br>
+                <h1 id="dealerCards"></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="player">
+        <div id="yourCards"><br></div>
+        Your Bet:
+        <input type="text" id="playerBet" size="5"> <span id="playerBetRes"></span> <br>
+        <button id="betBtn">Confirm Bet</button>
+        <button id="hitBtn">Hit</button>
+        <button id="standBtn">Stand</button>
+        <button id="brokeBtn">Buy In</button>
+
+        <br>
+        Money Remaining:
+        <span id="moneyRemaining"></span> <br>
+    </div>
+</body>
+</html>
