@@ -1,0 +1,58 @@
+body {
+    background-image: url("../img/blackboard.webp");
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    padding: 25px;
+    border: whitesmoke dashed 5px;
+    font-weight: bolder;
+    color: aliceblue;
+    text-shadow: black 2px 2px 2px;
+}
+
+label {
+    color: darkgray;
+    cursor: pointer;
+}
+
+input {
+    border: black 5px outset;
+    background-color: darkgray;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
+button {
+    background-color: lightslategrey;
+    border: white 5px outset;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px white;
+}
+
+select {
+    background-color: darkgray;
+    border: black 3px outset;
+    text-shadow: white 2px 2px 2px;
+}
+
+.question {
+    border-bottom: white solid thin;
+    margin: auto;
+    width: fit-content;
+}
+
+.bottom {
+    font-size: large;
+}
+
+#questionsContainer {
+    font-size: x-large;
+    font-weight: bold;
+    color: azure;
+    text-shadow: 1px 1px 1px black;
+}

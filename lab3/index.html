@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+</head>
+<body>
+    
+    <h1> Are you smarter than a 5th Grader? (Genius Level) </h1>
+
+    <div id="questionsContainer">
+        <div class="question" id="questionOne"> 1. What language does Apple primarily use? </div>
+
+        <div id="randOptions"></div>
+
+        <br>
+
+        <div class="question" id="questionTwo"> 2. Which numbers are prime? </div>
+
+        <label>
+            <input type="checkbox" id="q2a"> 93
+        </label>
+        <label>
+            <input type="checkbox" id="q2b"> 97
+        </label>
+        <label>
+            <input type="checkbox" id="q2c"> 88
+        </label>
+        <span id="q2f"></span>
+
+        <br><br>
+
+        <div class="question" id="questionThree"> 3. What is 2 to the power of 8? </div>
+        <label>
+            <input id="mathQ" type="number" min="0" max="10000000000" step="1">
+        </label>
+        <span id="q3f"></span>
+
+        <br><br>
+
+        <div class="question" id="questionFour"> 4. What element is 'He'? </div>
+        <input id="chemElt" type="text">
+        <span id="q4f"></span>
+
+        <br><br>
+
+        <div class="question" id="questionFive"> 5. Which particle has a negative charge? </div>
+        <select id="dropDown">
+            <option value="proton">Proton</option>
+            <option value="neutron">Neutron</option>
+            <option value="electron">Electron</option>
+            <option value="photon">Photon</option>
+        </select>
+        <span id="q5f"></span>
+
+        <br><br>
+
+        <button id="submitBtn"> Submit Quiz </button>
+
+        <div class="bottom" id="score"></div>
+        <div>
+            <h3 class="bottom">Times Quiz Taken: <span id="timesTaken"></span></h3>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
